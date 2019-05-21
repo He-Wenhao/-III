@@ -23,25 +23,6 @@ struct beta_FPU {
 
 
 
-//重载array的+,*运算符
-template<typename T, int K>
-array<T, K> operator+(array<T, K> a, array<T, K> b) {
-	array<T, K> result;
-	for (int i = 0; i < K; i++) {
-		result.at(i) = a.at(i) + b.at(i);
-	}
-	return result;
-}
-
-template<typename T, int K>
-array<T, K> operator*(T a, array<T, K> b) {
-	array<T, K> result;
-	for (int i = 0; i < K; i++) {
-		result.at(i) = a * b.at(i);
-	}
-	return result;
-}
-
 
 
 
@@ -99,12 +80,12 @@ double beta_FPU<n>::Enegy(int k) {
 	for (int j = 1; j < n + 1; j++) {
 		Qk += sin(PI*k*j / double(n + 1))*xp[j - 1];
 	}
-	Qk = sqrt(2. / double(n + 1))*Qk;
+	Qk = sqrt(2. / double(n))*Qk;
 	//广义速度Qk_
 	double Qk_ = 0;
 	for (int j = 1; j < n + 1; j++) {
 		Qk_ += sin(PI*k*j / double(n + 1))*xp[j - 1 + n];
 	}
-	Qk_ = sqrt(2. / double(n + 1))*Qk_;
+	Qk_ = sqrt(2. / double(n))*Qk_;
 	return 0.5*pow(Qk_, 2) + 0.5*pow(Qk*omega<n>(k), 2);
 }

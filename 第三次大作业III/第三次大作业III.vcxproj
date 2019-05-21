@@ -118,6 +118,10 @@
     <Text Include="temp.txt" />
     <Text Include="temp2.txt" />
     <Text Include="temp4.txt" />
+    <Text Include="temp5_average.txt" />
+    <Text Include="temp5_E1.txt" />
+    <Text Include="temp6.txt" />
+    <Text Include="temp7.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="my_const.h" />
