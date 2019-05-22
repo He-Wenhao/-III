@@ -120,7 +120,8 @@
     <Text Include="temp4.txt" />
     <Text Include="temp5_average.txt" />
     <Text Include="temp5_E1.txt" />
-    <Text Include="temp6.txt" />
+    <Text Include="temp6_1.txt" />
+    <Text Include="temp6_2.txt" />
     <Text Include="temp7.txt" />
   </ItemGroup>
   <ItemGroup>

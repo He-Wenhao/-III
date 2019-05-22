@@ -67,11 +67,6 @@ void beta_FPU<n>::t_iter() {
 }
 
 
-//求k阶频率
-template<int n>
-double omega(int k) {
-	return 2 * sin(PI*k / 2. / (n + 1));
-}
 //求k阶能量
 template<int n>
 double beta_FPU<n>::Enegy(int k) {

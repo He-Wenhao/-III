@@ -33,7 +33,10 @@
     <Text Include="temp7.txt">
       <Filter>资源文件</Filter>
     </Text>
-    <Text Include="temp6.txt">
+    <Text Include="temp6_1.txt">
+      <Filter>资源文件</Filter>
+    </Text>
+    <Text Include="temp6_2.txt">
       <Filter>资源文件</Filter>
     </Text>
   </ItemGroup>

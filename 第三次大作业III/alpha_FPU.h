@@ -16,7 +16,6 @@ struct alpha_FPU {
 	}
 	array<double, 2 * n> diff_xp(array<double, 2 * n> xp);
 	void t_iter();//完成一次迭代
-	double omega(int k);//求第k阶频率
 	double Enegy(int k);//求第k阶能量
 };
 
@@ -86,25 +85,20 @@ void alpha_FPU<n>::t_iter() {
 }
 
 
-//求k阶频率
-template<int n>
-double alpha_FPU<n>::omega(int k) {
-	return 2 * sin(PI*k / 2. / (n + 1));
-}
 //求k阶能量
 template<int n>
 double alpha_FPU<n>::Enegy(int k) {
 	//广义坐标坐标Qk
 	double Qk = 0.;
 	for (int j = 1; j < n+1; j++) {
-		Qk += sin(PI*k*j / double(n ))*xp[j - 1];
+		Qk += sin(PI*k*j / double(n+1 ))*xp[j - 1];
 	}
-	Qk = sqrt(2. / double(n+1))*Qk;
+	Qk = sqrt(2. / double(n))*Qk;
 	//广义速度Qk_
 	double Qk_ = 0;
 	for (int j = 1; j < n + 1; j++) {
 		Qk_ += sin(PI*k*j / double(n+1))*xp[j - 1 + n];
 	}
-	Qk_ = sqrt(2. / double(n+1))*Qk_;
-	return 0.5*pow(Qk_, 2) + 0.5*pow(Qk*omega(k), 2);
+	Qk_ = sqrt(2. / double(n))*Qk_;
+	return 0.5*pow(Qk_, 2) + 0.5*pow(Qk*omega<n>(k), 2);
 }
