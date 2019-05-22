@@ -122,7 +122,10 @@
     <Text Include="temp5_E1.txt" />
     <Text Include="temp6_1.txt" />
     <Text Include="temp6_2.txt" />
+    <Text Include="temp6_average.txt" />
     <Text Include="temp7.txt" />
+    <Text Include="temp8beta0.txt" />
+    <Text Include="temp8beta1.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="my_const.h" />
@@ -131,6 +134,9 @@
   <ItemGroup>
     <ClInclude Include="alpha_FPU.h" />
     <ClInclude Include="beta_FPU.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bighome3III.nb" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

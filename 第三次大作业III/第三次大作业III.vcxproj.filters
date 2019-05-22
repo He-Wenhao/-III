@@ -39,6 +39,15 @@
     <Text Include="temp6_2.txt">
       <Filter>资源文件</Filter>
     </Text>
+    <Text Include="temp6_average.txt">
+      <Filter>资源文件</Filter>
+    </Text>
+    <Text Include="temp8beta0.txt">
+      <Filter>资源文件</Filter>
+    </Text>
+    <Text Include="temp8beta1.txt">
+      <Filter>资源文件</Filter>
+    </Text>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="test.cpp">
@@ -55,5 +64,10 @@
     <ClInclude Include="beta_FPU.h">
       <Filter>头文件</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bighome3III.nb">
+      <Filter>资源文件</Filter>
+    </None>
   </ItemGroup>
 </Project>
