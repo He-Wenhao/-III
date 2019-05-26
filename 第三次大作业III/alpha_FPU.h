@@ -5,7 +5,7 @@ using namespace std;
 //n代表自由度个数
 template<int n>
 struct alpha_FPU {
-	double alpha;//三次非谐系
+	double alpha;//三次非谐系数
 	double delta_t;//迭代步长
 	array<double, 2 * n> xp;//相空间坐标(x,p)
 	//初始化

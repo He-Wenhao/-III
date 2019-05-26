@@ -349,9 +349,13 @@ void test_8_beta1() {
 
 
 int main() {
+	//test_2();
+	//test_4();
+	//test_5_E1();
 	//test_5_average();
-	test_6_1();
+	//test_6_1();
 	//test_6_2();
+	//test_7();
 	//test_6_average();
 	//test_8_beta0();
 	//test_8_beta1();

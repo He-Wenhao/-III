@@ -6,7 +6,7 @@ using namespace std;
 //n代表自由度个数
 template<int n>
 struct beta_FPU {
-	double beta;//三次非谐系
+	double beta;//四次非谐系数
 	double delta_t;//迭代步长
 	array<double, 2 * n> xp;//相空间坐标(x,p)
 	//初始化
